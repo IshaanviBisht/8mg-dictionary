@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>8MG Dictionary</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <h1>8MG Dictionary - ADJECTIVES ✨</h1>
+    <p class="subtitle">8MG's website for all the words we learnt this year!!</p>
+    <p class="subtitle"> Note: All pronounciations are in UK English. </p>
+
+
+    <nav>
+        <ul class="sidebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noun.html">Nouns</a></li>
+            <li><a href="adjective.hmtl">Adjectives</a></li>
+            <li><a href="verb.html">Verbs</a></li>
+        </ul>
+    </nav>
+
+    <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button>Search</button>
+    </form>
+
+    <div class="word-card" id="ebullient">
+        <div class="word">
+            1. Ebullient
+            <button onclick="speakThis('Ebullient')">🔊</button>
+        </div>
+        <div class="type">Adjective | /ɪbˈʊl.i.ənt/ </div>
+        <div class="level"> C1 Vocabulary </div>
+        <div class="meaning"> Meaning: Very energetic, positive, and happy. </div>
+        <div class="sentence">"He wasn't his usual ebullient self."</div>
+    </div>
+
+    <div class="word-card" id="haughty">
+        <div class="word">
+            2. Haughty
+            <button onclick="speakThis('Haughty')">🔊</button>
+        </div>
+        <div class="type">Adjective | /ˈhɔː.ti/ </div>
+        <div class="level"> C1 Vocabulary </div>
+        <div class="meaning"> Meaning: Unfriendly and seeming to consider yourself better than other people. </div>
+        <div class="sentence">"She has a rather haughty manner."</div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="footer"> Made by Ishaanvi Bisht </div>        
+
+</body>
+</html>

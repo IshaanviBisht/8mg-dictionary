@@ -21,3 +21,8 @@ document.querySelector('form').addEventListener('submit', function (e) {
 });
 
 const divs = document.querySelectorAll(".word-card");
+
+function toggleSidebar() {
+    document.querySelector('.sidebar').classList.toggle('open');
+    document.body.classList.toggle('sidebar-open');
+}

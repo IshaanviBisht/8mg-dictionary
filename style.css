@@ -1,17 +1,17 @@
 body {
-    background: #FBF5E5;
-    font-family: 'Quicksand', sans-serif;
+    background: #fbf5e5;
+    font-family: "Quicksand", sans-serif;
     padding: 30px;
     color: #333;
     font-weight: 400;
-} 
+}
 
 h1 {
     text-align: center;
-    font-family: 'Quicksand', cursive;
+    font-family: "Quicksand", cursive;
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #D76C82;
+    color: #d76c82;
 }
 
 .subtitle {
@@ -21,19 +21,87 @@ h1 {
     color: #343232;
 }
 
-input[type=search] {
+body.sidebar-open {
+    margin-left: 220px;
+    transition: margin 0.3s;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px; 
+    width: 220px;
+    height: 100vh;
+    background: #f8f8f8;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    transition: left 0.3s;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px 0 20px 20px;
+    margin: 0; /* <-- remove margin */
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+body.sidebar-open {
+    margin-left: 220px; 
+    transition: margin 0.3s;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem; 
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    z-index: 1101;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0.3em 0.7em;
+    color: #d76c82;
+    transition: left 0.3s; 
+}
+
+body.sidebar-open .sidebar-toggle {
+    left: 230px; 
+}
+
+.sidebar li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #d76c82;
+}
+
+input[type="search"] {
     width: 100%;
     height: 44px;
     padding: 10px;
     border-radius: 10px;
-    border: solid 2px #B03052;
+    border: solid 2px #b03052;
     font-size: 1rem;
     margin-bottom: 20px;
-    font-family: 'Quicksand';
+    font-family: "Quicksand";
 }
 
 button {
-    background-color: #D76C82;
+    background-color: #d76c82;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -41,16 +109,16 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: 'Quicksand';
+    font-family: "Quicksand";
 }
 
-button:hover {
-    background-color: #B03052;
+    button:hover {
+    background-color: #b03052;
 }
 
 .word-card {
     background: #fcedf2;
-    border: 2px dashed #B03052;
+    border: 2px dashed #b03052;
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -66,10 +134,10 @@ button:hover {
 .word {
     font-size: 1.6rem;
     font-weight: bold;
-    color: #D76C82;
+    color: #d76c82;
     display: flex;
     align-items: center;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .word button {
@@ -98,7 +166,7 @@ button:hover {
     margin-top: 10px;
 }
 
-.footer{
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>8MG Dictionary</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <h1>8MG Dictionary - VERBS ✨</h1>
+    <p class="subtitle">8MG's website for all the words we learnt this year!!</p>
+    <p class="subtitle"> Note: All pronounciations are in UK English. </p>
+
+
+    <nav>
+        <ul class="sidebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noun.html">Nouns</a></li>
+            <li><a href="adjective.html">Adjectives</a></li>
+            <li><a href="verb.html">Verbs</a></li>
+        </ul>
+    </nav>
+
+    <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button>Search</button>
+    </form>
+
+        <div class="word-card" id="eradicate">
+            <div class="word">
+                1. Eradicate
+                <button onclick="speakThis('Eradicate')">🔊</button>
+            </div>
+            <div class="type">Verb | /ɪˈræd.ɪ.keɪt/ </div>
+            <div class="level"> C2 Vocabulary </div>
+            <div class="meaning"> Meaning: To eradicate is to get rid of something completely or destroy something bad. </div>
+            <div class="sentence">"The government claims to be doing all it can to eradicate corruption."</div>
+        </div>
+
+    <script src="script.js"></script>
+
+    <div class="footer"> Made by Ishaanvi Bisht </div>        
+</body>
+</html>
