@@ -189,9 +189,6 @@ body.sidebar-open {
     .sidebar.open {
         left: 0; /* When sidebar is open, slide it in to the left edge */
     }
-    .sidebar-toggle {
-        left: 1rem; /* When sidebar is open, move toggle button with sidebar */
-    }
     body.sidebar-open .sidebar-toggle {
         left: 82vw;  /* Place toggle just outside the sidebar */
     }
