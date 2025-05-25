@@ -175,3 +175,24 @@ button {
     color: white;
     text-align: center;
 }
+
+@media (min-width:320px) {
+body.sidebar-open {
+        margin-left: 0; /* When sidebar is open, it doesnt push the main content */
+    }
+    .sidebar {
+        width: 80vw; /* Sidebar takes 80% of viewport width */
+        min-width: 180px;
+        max-width: 95vw;
+        left: -80vw;
+    }
+    .sidebar.open {
+        left: 0; /* When sidebar is open, slide it in to the left edge */
+    }
+    .sidebar-toggle {
+        left: 1rem; /* When sidebar is open, move toggle button with sidebar */
+    }
+    body.sidebar-open .sidebar-toggle {
+        left: 82vw;  /* Place toggle just outside the sidebar */
+    }
+}
