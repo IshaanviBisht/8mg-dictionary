@@ -193,3 +193,12 @@ body.sidebar-open {
         left: 82vw;  /* Place toggle just outside the sidebar */
     }
 }
+
+.hyperlink {
+    color: white;
+    text-decoration: none;
+}
+
+.hyperlink:hover {
+    text-decoration: underline;
+}
